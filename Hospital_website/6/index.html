@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dental Promo</title>
+  <style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.dental-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, rgba(0,0,255,0.2), #1E90FF);
+  color: white;
+  padding: 40px 20px;
+  position: relative;
+}
+
+.banner-image img {
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  position: relative;
+  left: 200px;
+  overflow: hidden;
+}
+
+.banner-text {
+  flex: 1;
+  padding: 0 40px;
+  position: relative;
+  left: 300px;
+}
+
+.small-text {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.banner-text h1 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+.book-btn {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+
+
+.happy-stories {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 360px;
+  gap: 40px;
+}
+
+.left {
+  flex: 1;
+  font-size: 30px;
+}
+
+.left h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.left .subtext {
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+
+.right {
+  display: flex;
+  gap: 30px;
+  flex: 2;
+  justify-content: space-between;
+}
+
+.testimonial {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.quote {
+  color: #007bff;
+  font-size: 24px;
+  margin-right: 7px;
+  font-size: 70px;
+  line-height: 1;
+  margin-bottom: -70px;
+}
+.testimonial-text{
+  line-height: 2;
+}
+
+/* Tablets: 768px to 1024px */
+@media (max-width: 1024px) {
+  .dental-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .banner-image img {
+    height: auto;
+    width: 80%;
+    max-width: 300px;
+    left: 0;
+    margin: 0 auto 20px auto;
+  }
+
+  .banner-text {
+    padding: 0;
+    left: 0;
+  }
+
+  .happy-stories {
+    flex-direction: column;
+    padding: 50px 40px;
+    gap: 20px;
+  }
+
+  .right {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* Mobile: under 768px */
+@media (max-width: 767px) {
+  .dental-banner {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .banner-image img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    left: 0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .banner-text {
+    padding: 0;
+    left: 0;
+    text-align: center;
+  }
+
+  .banner-text h1 {
+    font-size: 28px;
+  }
+
+  .small-text {
+    font-size: 16px;
+  }
+
+  .book-btn {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .happy-stories {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .left, .right {
+    flex: 1;
+    text-align: center;
+  }
+
+  .right {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .quote {
+    font-size: 50px;
+    margin-bottom: -50px;
+  }
+}
+
+  </style>
+</head>
+<body>
+    <section class="dental-banner">
+    <div class="banner-image">
+      <img src="patient.jpg" alt="Smiling Patient">
+    </div>
+    <div class="banner-text">
+      <p class="small-text">We Love to See You Smiles</p>
+      <h1>$100 OFF on All Dental<br>Service*</h1>
+      <button class="book-btn">Book An Appointment</button>
+    </div>
+</section>
+  <section class="happy-stories">
+    <div class="left">
+      <h2>Happy Stories</h2>
+      <p class="subtext">Creating Vibrant Smiles for Healthy Lifestyles!</p>
+    </div>
+    <div class="right">
+      <div class="testimonial">
+          <span class="quote">“</span><br>
+        <p class="testimonial-text"> Voluptatum aspernatur ullamcorper hymenaeos. Sagittis pretium vulputate ut velit augue, eget. Reiciendis rerum, mus commodo tempora deserunt, nesciunt congue quod torquent suspendisse mauris.Voluptatem doloribus nihil!
+        </p>
+      </div>
+      <div class="testimonial">
+          <span class="quote">“</span><br>
+        <p class="testimonial-text"> Voluptatum aspernatur ullamcorper hymenaeos. Sagittis pretium vulputate ut velit augue, eget. Reiciendis rerum, mus commodo tempora deserunt, nesciunt congue quod torquent suspendisse mauris.Voluptatem doloribus nihil!
+        </p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

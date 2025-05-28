@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <style>
+    * {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  body { 
+    margin: 0;
+    background-color: #f5f9ff;
+  }
+  .container {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  h1 {
+    text-align: center;
+    font-size: 2.5em;
+  }
+  .subheading {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  .map-btn-wrapper {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .map-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #307cff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    width: auto;
+    max-width: 100%;
+  }
+  
+  
+  .info-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    background: #307cff;
+    border-radius: 8px;
+    color: white;
+    padding: 30px 20px;
+    gap: 20px;
+  }
+  .info {
+    flex: 1;
+    min-width: 250px;
+  }
+
+  .info-flex {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .icon-circle {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon-circle img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
+       
+  .info h3 {
+    margin: 10px 0 5px;
+  }
+  .form-map {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  form {
+    flex: 1;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  button {
+    background: #307cff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .map {
+    flex: 1;
+    min-width: 300px;
+  }
+  .success-message {
+    color: rgb(0, 0, 0);
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  @media (max-width: 768px) {
+    .info-boxes, .form-map {
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    h1 {
+      font-size: 1.8em;
+    }
+  
+    .info-flex {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
+    .map-btn {
+      width: 90%;
+      font-size: 1em;
+    }
+  
+    input, textarea {
+      font-size: 1em;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .info-boxes,
+    .form-map {
+      flex-direction: column;
+    }
+  
+    form {
+      min-width: 100%;
+    }
+  
+    .map {
+      min-width: 100%;
+    }
+  
+    input, textarea {
+      width: 100%;
+      font-size: 1em;
+    }
+  
+    button {
+      width: 100%;
+    }
+  
+    .icon-circle {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .icon-circle img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 425px) {
+    h1 {
+      font-size: 1.8em;
+    }
+  
+    .subheading {
+      font-size: 1em;
+      padding: 0 10px;
+    }
+  
+    .info {
+      min-width: 100%;
+    }
+  
+    .info-flex {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
+    .map-btn {
+      width: 90%;
+      font-size: 1em;
+    }
+  
+    form {
+      min-width: 100%;
+    }
+  
+    .map iframe {
+      width: 100%;
+      height: 300px;
+    }
+  
+    input, textarea {
+      font-size: 1em;
+      padding: 12px;
+    }
+  
+    button {
+      font-size: 1em;
+    }
+  }
+  
+  
+  </style>
+ 
+</head>
+<body>
+  <div class="container3">
+    <h1>How to Find Us</h1>
+    <p class="subheading">Fill up the Form and Ask Your Queries</p>
+    <div class="map-btn-wrapper">
+        <a href="https://maps.google.com/?q=177+E+Houston+St+New+York+NY+10002" target="_blank" class="map-btn">View On Google Map</a>
+      </div>
+      
+
+    <div class="info-boxes">
+        <div class="info">
+          <div class="info-flex">
+            <div class="icon-circle">
+              <img src="https://img.icons8.com/ios-filled/50/ffffff/marker.png" alt="Address Icon" />
+            </div>
+            <div>
+              <h3>Address</h3>
+              <p>177 E Houston St<br>New York, NY 10002</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="info">
+          <div class="info-flex">
+            <div class="icon-circle">
+              <img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png" alt="Phone Icon" />
+            </div>
+            <div>
+              <h3>Phone</h3>
+              <p>+1 (888) 695-9859<br>+1 (888) 569-9859</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="info">
+          <div class="info-flex">
+            <div class="icon-circle">
+              <img src="https://img.icons8.com/ios-filled/50/ffffff/message-group.png" alt="Email Icon" />
+            </div>
+            <div>
+              <h3>Email</h3>
+              <p>info@example.com<br>hello@example.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="form-map">
+        <div id="formContainer">
+          <form id="contactForm" onsubmit="handleSubmit(event)">
+            <h3>Book Your Appointment</h3>
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email (Gmail only)" pattern="[a-zA-Z0-9._%+-]+@gmail\.com" required />
+            <input type="tel" name="phone" placeholder="Your Phone Number" pattern="[0-9]{10}" required />
+            <textarea name="message" placeholder="Message" rows="5" required></textarea>
+            <button type="submit">Submit</button>
+          </form>
+          <div class="success-message" id="successMessage" style="display: none;">
+            Thanks for contacting us! We will be in touch with you shortly.
+          </div>
+        </div>
+        
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps?q=177+E+Houston+St+New+York+NY+10002&output=embed"
+            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+      
+  </div>
+  <script>
+    
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    // Optional: further custom validation logic can be added here
+
+    document.getElementById("contactForm").style.display = "none";
+    document.getElementById("successMessage").style.display = "block";
+  }
+
+
+  </script>
+
+  <!-- <script src="first.js"></script> -->
+</body>
+</html>

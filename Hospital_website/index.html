@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hospital website</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+     <style>
+        
+     </style>
+</head>
+
+<body>
+    <!--part1  -->
+    <section class="page-1">
+        <div class="overlay">
+            <div class="nav-bar">
+                <div class="logo">
+                    <img src="tooth.png" alt="logo">
+                    <a href=""> <span style="font-weight: bold;">Dental</span> Clinic</a>
+                </div>
+                <div class="nav-items">
+                    <a href="#">Home</a>
+                    <a href="#">Services</a>
+                    <a href="#">Reviews</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">About</a>
+                    <div class="btn-contact-us">
+                        <a href="">Call: +(888) 695-9859</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+<div class="para">
+    <p class="paragraph">A Better life start with a <br> Beautiful smile</p>
+</div>
+    </section>
+
+    <!-- part2 -->
+    <section class="hero">
+        <div class="content">
+            <h1>Welcome to Dental Clinic</h1>
+            <p class="subheading">
+                A descriptive paragraph that tells clients how good you are and proves
+                that you are the best choice that they’ve made. This paragraph is also
+                for those who are looking out for a reliable dental clinic.
+            </p>
+            <div class="features">
+                <div class="feature-box">
+                    <div class="icon">🏠</div>
+                    <div>
+                        <h3>Friendly Clinic Near You</h3>
+                        <p>
+                            This is a short description elaborating the service you have
+                            mentioned above.
+                        </p>
+                    </div>
+                </div>
+                <div class="feature-box">
+                    <div class="icon">🧑‍⚕️</div>
+                    <div>
+                        <h3>Experienced Dentist</h3>
+                        <p>
+                            This is a short description elaborating the service you have
+                            mentioned above.
+                        </p>
+                    </div>
+                </div>
+                <a href="https://www.google.com/maps/dir//Plot+no+31,+Sector+25+Next+To+Seawoods+Railway+Station,+Sector+25,+Nerul,+Navi+Mumbai,+Maharashtra+400706/@19.0218235,72.9405872,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3be7c3bb87cefb85:0xf6fd2f6171bb45f7!2m2!1d73.0229889!2d19.0218418?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D"
+                    class="map-btn">View On Google Map</a>
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="pexels-shvetsa-3845759.jpg" alt="Dental Clinic" />
+        </div>
+        <div class="image-section2">
+            <img src="pexels-shvetsa-3845729.jpg" alt="Dental photo" />
+        </div>
+    </section>
+
+    <!-- part3 -->
+    <div class="container">
+        <div class="info-section">
+            <h2>New Patient</h2>
+            <p>A descriptive paragraph that tells clients how good you are and proves that <br> you are the best choice
+                that they’ve made. This paragraph is also for those who <br are looking out for a reliable dental
+                    clinic.</p>
+            <div class="contact">
+                <p><img src="call.png" alt=""> NEED ASSISTANCE?</p>
+                <p class="phone-number">+(888) 695-9859</p>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <form id="patientForm">
+                <input type="text" placeholder="Your Name" name="name" required />
+                <input type="email" placeholder="Your Email" name="email" required />
+                <input type="tel" placeholder="Your Phone Number" name="phone" required />
+                <button type="submit">Send Request</button>
+            </form>
+            <p id="error-message" style="color:red; margin-top:10px;"></p>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('patientForm');
+        const errorMsg = document.getElementById('error-message');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const emailInput = form.email.value.trim();
+
+            // Basic regex to validate email format
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!emailPattern.test(emailInput)) {
+                errorMsg.textContent = "Please enter a valid email address (e.g., name@example.com)";
+            } else {
+                errorMsg.textContent = "";
+                alert("Form submitted successfully!");
+                // Here you would typically submit the form with AJAX or let it proceed
+                // form.submit(); // Uncomment if you want to actually submit
+            }
+        });
+    </script>
+
+    <!-- part4 -->
+    <section class="dental-section">
+        <div class="image-stack">
+            <img src="dental.webp" alt="Background" class="background-img">
+            <img src="dentist.jpg" alt="Dentist with patient" class="main-img">
+        </div>
+        <div class="text-content">
+            <h2>Committed To Dental Excellence</h2>
+            <h3>We Create Beautiful and Brighter Smiles</h3>
+            <p>
+                Urna bibendum imperdiet. Amet, eleifend nisi, varius? Nunc, iure iure nam ac nisi dictum augue rutrum
+                iaculis duis duisnum quam dolore.
+                Aliases sapien ac do ipsum nostra adipiscing.
+            </p>
+            <p>
+                rutrum fugiat doloribus, dolore, ipsa commodi doloremque do sanctus neque molestias dis est euismod,
+                diam illo incidunt dignissim expedita.
+            </p>
+            <p class="doctor-name">Dr. Michael Martinez<br><span>Master of Dentistry</span></p>
+        </div>
+    </section>
+
+    <!-- part5 -->
+    <section class="services-section">
+        <div class="heading">
+            <h1>Complete Care on Your Schedule</h1>
+            <p>Bringing Life to Your Smile</p>
+        </div>
+        <div class="services-container">
+            <div class="service-box">
+                <div class="icon"><img src="user-profile.png" alt=""></div>
+                <h3>Experienced Dentist</h3>
+                <p>This is a short description elaborating the service you have mentioned above.</p>
+            </div>
+            <div class="service-box">
+                <div class="icon"><img src="grimacing.png" alt=""></div>
+                <h3>Advance Treatment</h3>
+                <p>This is a short description elaborating the service you have mentioned above.</p>
+            </div>
+            <div class="service-box">
+                <div class="icon"><img src="handshake.png" alt=""></div>
+                <h3>Guaranteed Results</h3>
+                <p>This is a short description elaborating the service you have mentioned above.</p>
+            </div>
+            <div class="service-box">
+                <div class="icon"><img src="hospital.png" alt=""></div>
+                <h3>Modern Equipment</h3>
+                <p>This is a short description elaborating the service you have mentioned above.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- part6 -->
+     <section class="container2-section">
+<div class="container2">
+        <!-- Left Column: Heading -->
+        <div class="header">
+            <h1>Dentistry for Today’s <br>Lifestyle</h1>
+            <p>We Have All Your Dental Needs Covered</p>
+        </div>
+
+        <!-- Right Column: Cards -->
+        <div class="services-grid">
+            <!-- Row 1 (2 cards) -->
+            <div class="card1" style="grid-area: card1;"><span>01.</span>
+                <h3>Dental X-Rays</h3>
+                <p>This is a short description elaborating the service you have mentioned above.</p>
+            </div>
+            <div class="card2" style="grid-area: card2;"><span>02.</span>
+                <h3>Exams & Cleanings</h3>
+                <p>This is a short description elaborating the service you have mentioned above.</p>
+            </div>
+
+            <!-- Row 2 (4 cards) -->
+            <div class="card card3" style="grid-area: card3;"><span>03.</span>
+                <h3>Cosmetic Dentistry</h3>
+                <p>This is a short description elaborating the service you have mentioned above.</p>
+            </div>
+            <div class="card card4" style="grid-area: card4;"><span>04.</span>
+                <h3>Periodontal Disease</h3>
+                <p>This is a short description elaborating the service you have mentioned above.</p>
+            </div>
+            <div class="card card5" style="grid-area: card5;"><span>05.</span>
+                <h3>Root Canals</h3>
+                <p>This is a short description elaborating the service you have mentioned above.</p>
+            </div>
+            <div class="card card6" style="grid-area: card6;"><span>06.</span>
+                <h3>Extractions</h3>
+                <p>This is a short description elaborating the service you have mentioned above.</p>
+            </div>
+
+            <!-- Row 3 (2 cards + insurance) -->
+            <div class="card card7" style="grid-area: card7;"><span>07.</span>
+                <h3>Teeth Whitening</h3>
+                <p>This is a short description elaborating the service you have mentioned above.</p>
+            </div>
+            <div class="card card8" style="grid-area: card8;"><span>08.</span>
+                <h3>Braces & Implants</h3>
+                <p>This is a short description elaborating the service you have mentioned above.</p>
+            </div>
+            <div class="card insurance" style="grid-area: insurance;">
+                <p>📞 FOR INSURANCE</p>
+                <h2>(007) 567-8976</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- part7 -->
+    <section class="dental-banner">
+    <div class="banner-image">
+      <img src="patient.jpg" alt="Smiling Patient">
+    </div>
+    <div class="banner-text">
+      <p class="small-text">We Love to See You Smiles</p>
+      <h1>$100 OFF on All Dental<br>Service*</h1>
+      <button class="book-btn">Book An Appointment</button>
+    </div>
+</section>
+
+    <!-- part8 -->
+    <section>
+        <div class="section-title">
+            <h2>Happy Stories</h2>
+            <p>Creating Vibrant Smiles for Healthy Lifestyles!</p>
+        </div>
+
+        <div class="testimonials">
+            <div class="testimonial-card">
+                <blockquote>
+                    <span style="font-size: 1.5rem; color: #007bff">&ldquo;</span>
+                    Voluptatum aspernatur ullamcorper hymenaeos. Saepe pretium voluptas
+                    ut velit augue, eget. Recusandae rerum, mus commodo tempora
+                    deserunt, nesciunt congue quod torquent suspendisse mauris.
+                    Voluptatem doloribus nihil!
+                </blockquote>
+                <div class="author">
+                    <img src="https://i.pravatar.cc/40?img=1" alt="Disha satpute" />
+                    <div class="author-name">Disha satpute</div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <blockquote>
+                    <span style="font-size: 1.5rem; color: #007bff">&ldquo;</span>
+                    Voluptatum aspernatur ullamcorper hymenaeos. Saepe pretium voluptas
+                    ut velit augue, eget. Recusandae rerum, mus commodo tempora
+                    deserunt, nesciunt congue quod torquent suspendisse mauris.
+                    Voluptatem doloribus nihil!
+                </blockquote>
+                <div class="author">
+                    <img src="https://i.pravatar.cc/40?img=2" alt="Saavi ambre" />
+                    <div class="author-name">Saavi ambre</div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <blockquote>
+                    <span style="font-size: 1.5rem; color: #007bff">&ldquo;</span>
+                    Voluptatum aspernatur ullamcorper hymenaeos. Saepe pretium voluptas
+                    ut velit augue, eget. Recusandae rerum, mus commodo tempora
+                    deserunt, nesciunt congue quod torquent suspendisse mauris.
+                    Voluptatem doloribus nihil!
+                </blockquote>
+                <div class="author">
+                    <img src="pexels-justin-shaifer-501272-1222271.jpg" alt="ansh dubey" />
+                    <div class="author-name">ansh dubey</div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <blockquote>
+                    <span style="font-size: 1.5rem; color: #007bff">&ldquo;</span>
+                    Voluptatum aspernatur ullamcorper hymenaeos. Saepe pretium voluptas
+                    ut velit augue, eget. Recusandae rerum, mus commodo tempora
+                    deserunt, nesciunt congue quod torquent suspendisse mauris.
+                    Voluptatem doloribus nihil!
+                </blockquote>
+                <div class="author">
+                    <img src="pexels-pixabay-415829.jpg" alt="Sayali Pilgar" />
+                    <div class="author-name">Sayali Pilgar</div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <blockquote>
+                    <span style="font-size: 1.5rem; color: #007bff">&ldquo;</span>
+                    Voluptatum aspernatur ullamcorper hymenaeos. Saepe pretium voluptas
+                    ut velit augue, eget. Recusandae rerum, mus commodo tempora
+                    deserunt, nesciunt congue quod torquent suspendisse mauris.
+                    Voluptatem doloribus nihil!
+                </blockquote>
+                <div class="author">
+                    <img src="pexels-justin-shaifer-501272-1222271.jpg" alt="Raj Manodra" />
+                    <div class="author-name">Raj Manodra</div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- part9 -->
+    <div class="container3">
+        <h1>How to Find Us</h1>
+        <p class="subheading">Fill up the Form and Ask Your Queries</p>
+        <div class="map-btn-wrapper">
+            <a href="https://maps.google.com/?q=177+E+Houston+St+New+York+NY+10002" target="_blank" class="map-btn">View
+                On Google Map</a>
+        </div>
+
+
+        <div class="info-boxes">
+            <div class="info">
+                <div class="info-flex">
+                    <div class="icon-circle">
+                        <img src="https://img.icons8.com/ios-filled/50/ffffff/marker.png" alt="Address Icon" />
+                    </div>
+                    <div>
+                        <h3>Address</h3>
+                        <p>177 E Houston St<br>New York, NY 10002</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info">
+                <div class="info-flex">
+                    <div class="icon-circle">
+                        <img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png" alt="Phone Icon" />
+                    </div>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+1 (888) 695-9859<br>+1 (888) 569-9859</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info">
+                <div class="info-flex">
+                    <div class="icon-circle">
+                        <img src="https://img.icons8.com/ios-filled/50/ffffff/message-group.png" alt="Email Icon" />
+                    </div>
+                    <div>
+                        <h3>Email</h3>
+                        <p>info@example.com<br>hello@example.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-map">
+            <div id="formContainer">
+                <form id="contactForm" onsubmit="handleSubmit(event)">
+                    <h3>Book Your Appointment</h3>
+                    <input type="text" name="name" placeholder="Your Name" required />
+                    <input type="email" name="email" placeholder="Your Email (Gmail only)"
+                        pattern="[a-zA-Z0-9._%+-]+@gmail\.com" required />
+                    <input type="tel" name="phone" placeholder="Your Phone Number" pattern="[0-9]{10}" required />
+                    <textarea name="message" placeholder="Message" rows="5" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <div class="success-message" id="successMessage" style="display: none;">
+                    Thanks for contacting us! We will be in touch with you shortly.
+                </div>
+            </div>
+
+            <div class="map">
+                <iframe src="https://www.google.com/maps?q=177+E+Houston+St+New+York+NY+10002&output=embed" width="100%"
+                    height="350" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+
+    </div>
+    <script>
+
+        function handleSubmit(event) {
+            event.preventDefault();
+
+            // Optional: further custom validation logic can be added here
+
+            document.getElementById("contactForm").style.display = "none";
+            document.getElementById("successMessage").style.display = "block";
+        }
+    </script>
+
+    <!-- part10 -->
+     <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <h2><i class="fa-solid fa-tooth tooth-icon"></i> Dental <span class="light-text">Clinic</span></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe culpa dolorem voluptate enim odit, voluptatibus repudiandae repellat perferendis accusamus dicta numquam, eum assumenda? Sapiente vitae voluptatem minus dolore cum quidem.</p>
+      </div>
+     <div class="footer-right">
+  <a href="https://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://www.twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+  <a href="https://www.instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.google.com" target="_blank" rel="noopener"><i class="fab fa-google"></i></a>
+</div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright © 2025 Dental Clinic | Powered by Dental Clinic</p>
+    </div>
+  </footer>
+
+</body>
+</html>

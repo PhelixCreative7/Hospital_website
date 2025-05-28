@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dental Excellence</title>
+  <style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+.dental-section {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  gap: 40px;
+}
+
+.image-stack {
+  position: relative;
+  width: fit-content;
+  display: inline-block;
+  left: 280px;
+}
+
+.background-img {
+  position: absolute;
+  top: 20px;
+  left: -150px;
+  width: 250px;
+  z-index: 1;
+  opacity: 0.9; /* Optional: make it subtle */
+}
+
+.main-img {
+  position: relative;
+  width: 300px;
+  z-index: 2;
+  top: 100px;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.text-content {
+  max-width: 500px;
+  position: relative;
+  left: 300px;
+  top: 70px;
+}
+
+.text-content h2 {
+  font-size: 35px;
+  color: #111;
+}
+
+.text-content h3 {
+  font-size: 20px;
+  color: #111;
+  margin-top: 10px;
+}
+
+.text-content p {
+  margin-top: 17px;
+  line-height: 1.6;
+  font-size: 16px;
+  padding-top: 20px;
+}
+
+.doctor-name {
+  margin-top: 40px;
+  font-weight: bold;
+  font-size: 20px;
+ 
+}
+
+.doctor-name span {
+  display: block;
+  font-weight: normal;
+  color: #777;
+  font-size: 15px;
+}
+@media (max-width: 400px) {
+  .dental-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    gap: 20px;
+  }
+
+  .image-stack {
+    position: relative;
+    width: 50%;
+    max-width: 240px;
+    left: auto;
+    margin: 0 auto;
+  }
+
+  .background-img {
+    width: 100px;
+    left: -20px;
+    top: 10px;
+  }
+
+  .main-img {
+    width: 100%;
+    max-width: 220px;
+    top: auto;
+    margin-top: 50px;
+    border-bottom-left-radius: 110px;
+    border-bottom-right-radius: 110px;
+  }
+
+  .text-content {
+    position: static;
+    max-width: 100%;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .text-content h2 {
+    font-size: 20px;
+  }
+
+  .text-content h3 {
+    font-size: 15px;
+  }
+
+  .text-content p {
+    font-size: 14px;
+    line-height: 1.5;
+    padding-top: 10px;
+  }
+
+  .doctor-name {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+  .doctor-name span {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 414px) {
+  .dental-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 12px;
+    gap: 25px;
+  }
+
+  .image-stack {
+    position: relative;
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto;
+    left: 40px;
+  }
+
+  .background-img {
+    width: 110px;
+    left: -25px;
+    top: 10px;
+  }
+
+  .main-img {
+    width: 60%;
+    max-width: 240px;
+    margin-top: 50px;
+    top: auto;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+  }
+
+  .text-content {
+    position: static;
+    max-width: 100%;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .text-content h2 {
+    font-size: 22px;
+  }
+
+  .text-content h3 {
+    font-size: 16px;
+  }
+
+  .text-content p {
+    font-size: 15px;
+    line-height: 1.5;
+    padding-top: 12px;
+  }
+
+  .doctor-name {
+    font-size: 16px;
+    margin-top: 25px;
+  }
+
+  .doctor-name span {
+    font-size: 13px;
+  }
+}
+@media (min-width: 430px) {
+  .dental-section {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 40px 50px;
+    gap: 40px;
+  }
+
+  .image-stack {
+    position: relative;
+    width: fit-content;
+    max-width: 300px;
+    margin: 0;
+    left: auto;
+  }
+
+  .background-img {
+    position: absolute;
+    top: 20px;
+    left: -150px;
+    width: 250px;
+    opacity: 0.9;
+  }
+
+  .main-img {
+    width: 300px;
+    margin-top: 100px;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+  }
+
+  .text-content {
+    max-width: 500px;
+    position: relative;
+    left: auto;
+    top: auto;
+    padding: 0;
+    text-align: left;
+  }
+
+  .text-content h2 {
+    font-size: 35px;
+  }
+
+  .text-content h3 {
+    font-size: 20px;
+  }
+
+  .text-content p {
+    font-size: 16px;
+  }
+
+  .doctor-name {
+    font-size: 20px;
+    margin-top: 40px;
+  }
+
+  .doctor-name span {
+    font-size: 15px;
+  }
+}
+@media (min-width: 900px) {
+  .dental-section {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    gap: 40px;
+  }
+
+  .image-stack {
+    position: relative;
+    width: fit-content;
+    display: inline-block;
+    left: 280px;
+  }
+
+  .background-img {
+    position: absolute;
+    top: 35px;
+    left: -150px;
+    width: 250px;
+    z-index: 1;
+    opacity: 0.9; /* Optional: make it subtle */
+  }
+
+  .main-img {
+    position: relative;
+    width: 300px;
+    z-index: 2;
+    top: 40px;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .text-content {
+    max-width: 500px;
+    position: relative;
+    left: 300px;
+    top: 70px;
+  }
+
+  .text-content h2 {
+    font-size: 35px;
+    color: #111;
+  }
+
+  .text-content h3 {
+    font-size: 20px;
+    color: #111;
+    margin-top: 10px;
+  }
+
+  .text-content p {
+    margin-top: 17px;
+    line-height: 1.6;
+    font-size: 16px;
+    padding-top: 20px;
+  }
+
+  .doctor-name {
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .doctor-name span {
+    display: block;
+    font-weight: normal;
+    color: #777;
+    font-size: 15px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <section class="dental-section">
+    <div class="image-stack">
+  <img src="dental.webp" alt="Background" class="background-img">
+  <img src="dentist.jpg" alt="Dentist with patient" class="main-img">
+</div>
+    <div class="text-content">
+      <h2>Committed To Dental Excellence</h2>
+      <h3>We Create Beautiful and Brighter Smiles</h3>
+      <p>
+        Urna bibendum imperdiet. Amet, eleifend nisi, varius? Nunc, iure iure nam ac nisi dictum augue rutrum iaculis duis duisnum quam dolore.
+        Aliases sapien ac do ipsum nostra adipiscing.
+      </p>
+      <p>
+        rutrum fugiat doloribus, dolore, ipsa commodi doloremque do sanctus neque molestias dis est euismod, diam illo incidunt dignissim expedita.
+      </p>
+      <p class="doctor-name">Dr. Michael Martinez<br><span>Master of Dentistry</span></p>
+    </div>
+  </section>
+
+  <!-- part5 -->
+</body>
+</html>
